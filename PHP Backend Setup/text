@@ -1,0 +1,41 @@
+
+## Database Schema
+
+### database/schema.sql
+```sql
+-- Users table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    age INT,
+    location VARCHAR(100),
+    bio TEXT,
+    interests JSON,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Matches table
+CREATE TABLE matches (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user1_id INT,
+    user2_id INT,
+    match_score FLOAT,
+    matched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user1_id) REFERENCES users(id),
+    FOREIGN KEY (user2_id) REFERENCES users(id),
+    UNIQUE KEY unique_match (user1_id, user2_id)
+);
+
+-- Likes table
+CREATE TABLE likes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    liker_id INT,
+    liked_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (liker_id) REFERENCES users(id),
+    FOREIGN KEY (liked_id) REFERENCES users(id),
+    UNIQUE KEY unique_like (liker_id, liked_id)
+);
