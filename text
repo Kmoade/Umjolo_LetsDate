@@ -1,0 +1,7 @@
+umjolo-dating-app/
+├── backend/          # Flask and PHP backend implementations
+├── frontend/         # Various frontend implementations
+├── database/         # Database schema and migrations
+├── docs/            # Project documentation
+├── tests/           # Test suites
+└── scripts/         # Utility scripts
