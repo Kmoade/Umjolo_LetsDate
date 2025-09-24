@@ -1,0 +1,11 @@
+
+### docs/SETUP.md
+```markdown
+# Setup Guide
+
+## Flask Backend Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/khanyisile/umjolo-dating-app.git
+cd umjolo-dating-app/backend/flask-app
