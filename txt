@@ -1,0 +1,83 @@
+umjolo-dating-app/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+├── setup.py
+│
+├── backend/
+│   ├── flask-app/
+│   │   ├── app.py
+│   │   ├── config.py
+│   │   ├── models.py
+│   │   ├── routes/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth.py
+│   │   │   ├── profiles.py
+│   │   │   └── matches.py
+│   │   ├── templates/
+│   │   │   ├── base.html
+│   │   │   ├── index.html
+│   │   │   ├── profiles.html
+│   │   │   └── auth.html
+│   │   ├── static/
+│   │   │   ├── css/
+│   │   │   │   └── style.css
+│   │   │   ├── js/
+│   │   │   │   └── script.js
+│   │   │   └── images/
+│   │   └── requirements.txt
+│   │
+│   └── php-app/
+│       ├── index.php
+│       ├── profiles.php
+│       ├── auth.php
+│       ├── api.php
+│       ├── config.php
+│       ├── .htaccess
+│       ├── includes/
+│       │   ├── header.php
+│       │   ├── footer.php
+│       │   └── functions.php
+│       ├── css/
+│       │   └── style.css
+│       ├── js/
+│       │   └── script.js
+│       └── images/
+│
+├── frontend/
+│   ├── vanilla-js/
+│   │   ├── index.html
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── assets/
+│   ├── react-app/
+│   │   ├── src/
+│   │   ├── public/
+│   │   └── package.json
+│   └── vue-app/
+│       ├── src/
+│       ├── public/
+│       └── package.json
+│
+├── docs/
+│   ├── API.md
+│   ├── SETUP.md
+│   ├── DEPLOYMENT.md
+│   └── images/
+│
+├── database/
+│   ├── schema.sql
+│   ├── sample-data.sql
+│   └── migrations/
+│
+├── tests/
+│   ├── test_flask_app.py
+│   ├── test_models.py
+│   └── phpunit.xml
+│
+└── scripts/
+    ├── setup.sh
+    ├── deploy.sh
+    └── database-init.sh
