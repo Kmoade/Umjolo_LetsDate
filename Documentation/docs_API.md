@@ -22,3 +22,11 @@ Login user
         "email": "user@example.com"
     }
 }
+
+
+{
+    "status": "success",
+    "message": "Profile liked successfully"
+}
+
+
