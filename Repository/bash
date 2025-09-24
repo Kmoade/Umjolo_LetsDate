@@ -1,0 +1,27 @@
+# Create the main directory
+mkdir umjolo-lets-date
+cd umjolo-lets-date
+
+# Initialize git repository
+git init
+
+# Create directory structure
+mkdir -p backend/flask-app/{routes,templates,static/{css,js,images}}
+mkdir -p backend/php-app/{includes,css,js,images}
+mkdir -p frontend/{vanilla-js,react-app,vue-app}
+mkdir -p docs/images
+mkdir -p database/migrations
+mkdir -p tests
+mkdir -p scripts
+
+# Create all the files as shown above
+# Add each file to the appropriate directory
+
+# Add files to git
+git add .
+git commit -m "Initial commit: Umjolo Lets Date structure"
+
+# Connect to GitHub and push
+git remote add origin https://github.com/khanyisile/umjolo-lets-date.git
+git branch -M main
+git push -u origin main
